@@ -1,0 +1,68 @@
+li {
+    list-style: none;
+    display: inline-block; 
+}
+.header {
+    background-size: cover;
+    height: 200px;
+    background-image: url(フリー写真/header.jpg);
+    border: 1px white;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+}
+.header-list :hover {
+    color: rgb(80, 56, 212);
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 70px;
+    padding-left:20px;
+    text-decoration: none;
+}
+.header-list  li{
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+.contents {
+    height: 1000px;
+    width: 1000px;
+    background-color: rgb(205, 232, 240);
+    float:left;
+}
+.image-top {
+    background-color: blue;
+    padding: 10px;
+}
+.box {
+    font-size: 20px;
+    float: left;
+    margin: 10px 10px;
+    font-weight: bold;
+    background-color: lightskyblue;
+}
+.typhoon,.snow,.summer,.earthquake,.rain {
+    height: 300px;
+    width: 300px;
+}
+
+.text-box {
+    font-size: 20px;
+    float: left;
+    height: 1000px;
+    width: 333px;
+    background-color: blueviolet;
+}
+footer {
+    height: 200px;
+    background-color: #bac5eb;
+    clear: both;
+}
+.footer-list  li{
+    float: left;
+    margin: 0px 10px;
+}
