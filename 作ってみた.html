@@ -2,63 +2,112 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>天気庁</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>過去の災害特集</title>
     <link rel="stylesheet" href="作ってみた.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="作ってみた.jst">
+    </script>
+
+
   </head>
 
   <body>
     <div class="header">
-      <div class="header-logo"><a href="http://www.jma.go.jp/jma/index.html">天気庁</a></div>
+      <div class="header-logo">過去の災害特集</div>
       <div class="header-list">
         <ul>
           <li><a href="http://www.jma.go.jp/jma/">ホーム</a></li>
-          <li><a href="http://www.jma.go.jp/jma/menu/menuflash.html">防災情報</a></li>
-          <li>各種データ・資料</li>
-          <li>知識・解説</li>
-          <li>天気庁について</li>
-          <li>案内・申請</li>
-          <li>災害</li>
+          <li><a href="#">災害</a></li>
+          <li>台風
             <ul>
-              <li>台風</li>
-              <li>豪雪</li>
-              <li>猛暑・渇水</li>
-              <li>地震</li>
-              <li>大雨 </li>
+              <li><a href="https://ja.wikipedia.org/wiki/%E5%AE%A4%E6%88%B8%E5%8F%B0%E9%A2%A8">室戸台風</a></li>
+              <li><a href="https://ja.wikipedia.org/wiki/%E6%9E%95%E5%B4%8E%E5%8F%B0%E9%A2%A8">枕崎台風</a></li>
+              <li><a href="">伊勢湾台風</a></li>
+              <li><a href="">第2室戸台風</a></li>
+              <li><a href="">1991年台風19号</a></li>
+              <li><a href="">1993年台風13号</a></li>
+              <li><a href="">2018年台風21号</a></li>
+              <li><a href="https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C%E5%85%83%E5%B9%B4%E5%8F%B0%E9%A2%A8%E7%AC%AC19%E5%8F%B7">令和元年東日本台風</a></li>
             </ul>
+          </li>
+          <li>大雨
+            <ul>
+              <li><a href="">西日本豪雨</a></li>
+              <li><a href="">九州北部豪雨</a></li>
+            </ul>
+          </li>
+          <li>猛暑
+            <ul>
+              <li><a href="">平成4年の猛暑</a></li>
+            </ul>
+          </li>
+          <li>地震
+            <ul>
+              <li><a href="">関東大震災</a></li>
+              <li><a href="">昭和南海地震</a></li>
+              <li><a href="">福井地震</a></li>
+              <li><a href="">阪神淡路大震災</a></li>
+              <li><a href="">新潟県中越地震</a></li>
+              <li><a href="">東北地方太平洋沖地震</a></li>
+              <li><a href="">熊本地震</a></li>
+            </ul>
+          </li>
+
+          <li>大雪 </li>
+          <li>暴風</li>
+          <li>竜巻
+            <ul>
+              <li><a href="">佐呂間町</a></li>
+              <li><a href="">つくば市</a></li>
+            </ul>
+          </li>
+          <li>火山噴火
+            <ul>
+              <li><a href="">御嶽山噴火</a></li>
+              <li><a href="">雲仙普賢岳</a></li>
+              <li><a href="">箱根湧谷</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
 
-    <div class="contents"><p>天気庁</p>
+    <p>過去の災害</p>
+    <div class="contents">
       <div class="box">
-        <img src="フリー写真/gahag-006378.jpg" class="typhoon">
+        <a href="フリー写真/gahag-006378.jpg"><img src="フリー写真/gahag-006378.jpg" class="typhoon" width="1500" heoght="1500"></a>
         <p>台風</p>
+        <p>伊勢湾台風/室戸台風</p>
         <input type="button" value="ボタン" onClick="alert('あああ');">
       </div>
       <div class="box">
         <img src="フリー写真/pr02291-480x640.jpg" class="snow">
         <p>豪雪</p>
+        <p>38豪雪/59豪雪</p>
         <input type="button" value="ボタン" onClick="alert('いいい');">
       </div>
       <div class="box">
         <img src="フリー写真/summer.jpg" class="summer">
         <p>猛暑・渇水</p>
+        <p>平成6年/平成30年</p>
         <input type="button" value="ボタン" onClick="alert('ううう');">
       </div>
       <div class="box">
         <img src="フリー写真/earthquake.jpg" class="earthquake">
         <p>地震</p>
+        <p>阪神淡路大震災/東日本大震災</p>
       </div>
       <div class="box">
         <img src="フリー写真/rain.jpg" class="rain">
         <p>大雨</p>
+        <p>西日本豪雨/令和元年台風19号</p>
       </div>
     </div>
 
-    <div class="text-box">
-      <p>台風</p>
-      <input type="button" value="購入する" onClick="alert('おおお');">
-    </div>
   </body>
   
   <footer>
@@ -72,5 +121,7 @@
       </ul>
     </div>
     </div>
+    <a href="file:///C:/Users/bps/Desktop/作ってみた/作ってみた/作ってみた.html">このページのトップへ</a>
   </footer>
+
 </html>
