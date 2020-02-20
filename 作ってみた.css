@@ -21,18 +21,44 @@ li {
     font-size: 70px;
     padding-left:20px;
     text-decoration: none;
-}
-.header-list  li{
-    float: left;
-    padding: 20px;
-    text-decoration: none;
     color: white;
 }
+.header-list {
+    display: inline-block;
+    text-align: center;
+}
+
+.header-list  li{
+    float: left;
+    width: 125px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background-color: lightgreen;
+    border: solid 1px;
+}
+.header-list li li {
+    clear: both;
+    padding: 1px;
+}
+.header-list ul li ul {
+    position: relative;
+    top: 5px;
+    left: -42px;
+    width: 125px;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+}
+.header-list :hover > ul {
+    overflow: visible;
+    background-color: lightgray;
+    opacity: 1;
+}
 .contents {
-    height: 1000px;
-    width: 1000px;
-    background-color: rgb(205, 232, 240);
-    float:left;
+    margin: 0 0.8em;
+    display: flex;
+    flex-wrap: wrap;
 }
 .image-top {
     background-color: blue;
@@ -40,29 +66,20 @@ li {
 }
 .box {
     font-size: 20px;
-    float: left;
-    margin: 10px 10px;
+    width: 33%;
+    text-align: center;
     font-weight: bold;
     background-color: lightskyblue;
 }
 .typhoon,.snow,.summer,.earthquake,.rain {
-    height: 300px;
-    width: 300px;
-}
-
-.text-box {
-    font-size: 20px;
-    float: left;
-    height: 1000px;
-    width: 333px;
-    background-color: blueviolet;
+    height: 350px;
+    width: 350px;
 }
 footer {
     height: 200px;
-    background-color: #bac5eb;
+    background-color: #7890e7;
     clear: both;
 }
 .footer-list  li{
-    float: left;
     margin: 0px 10px;
 }
